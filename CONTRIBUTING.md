@@ -3,8 +3,7 @@ Contributing
 
 ## Signing your commits
 
-When you contribute to any Gigantum-managed repository (currently, any
-repository under the `gigantum` organization on GitHub), you must certify you
+When you contribute to this repository, you must certify you
 agree with the [Developer Certificate of Origin](https://developercertificate.org/). 
 You indicate your agreement by signing your git commits like this:
 
