@@ -1,0 +1,33 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Swap files
+*.swp
+*.swo
+
+# Session files
+Session.vim
+
+# Test binary, built with `go test -c`
+*.test
+
+# Python working files
+__pycache__
+*.pyc
+
+
+.env
+.DS_Store
+.vscode
+examples/notebooks/.ipynb_checkpoints
+examples/notebooks/test-dir
+examples/.ipynb_checkpoints
+.idea
+examples/notebooks/venv
+/venv/
+docs/docs-venv
+/docs/build/
