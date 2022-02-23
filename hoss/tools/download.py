@@ -564,7 +564,7 @@ def _download_worker(work_queue: Queue, status_queue: Queue, dataset: Dataset,
                 ref.read_to(obj_state.path.as_posix())
             else:
                 # If it's a directory and not actually a file, create the directory
-                p.mkdir(parents=True)
+                p.mkdir(parents=True, exist_ok=True)
             obj_state.status = ObjectStatus.EXISTS
 
         except Exception:
