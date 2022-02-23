@@ -65,7 +65,7 @@ There are examples available in the `client/examples` directory. In particular, 
 ## Development
 
 ### Testing
-This library is effectively tested via the Hoss [integration test suite](https://github.com/gigantum/hybrid-object-store/tree/main/test). These tests should be run or updated
+This library is effectively tested via the Hoss [integration test suite](https://github.com/WyssCenter/hybrid-object-store/tree/main/test). These tests should be run or updated
 as needed before accepting PRs.
 
 ### Docs
