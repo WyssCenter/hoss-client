@@ -87,18 +87,18 @@ Search for objects via metadata tags:
 That's just a sample of what you can do. For more details, :doc:`review the rest of the documentation <servers>`.
 
 For more detailed examples, check out
-`the examples directory <https://github.com/gigantum/hoss-client/tree/main/examples>`_
+`the examples directory <https://github.com/WyssCenter/hoss-client/tree/main/examples>`_
 
 Contribute
 ----------
 
-- Issue Tracker: `https://github.com/gigantum/hoss-client/issues <https://github.com/gigantum/hoss-client/issues>`_
-- Source Code: `https://github.com/gigantum/hoss-client <https://github.com/gigantum/hoss-client>`_
+- Issue Tracker: `https://github.com/WyssCenter/hoss-client/issues <https://github.com/WyssCenter/hoss-client/issues>`_
+- Source Code: `https://github.com/WyssCenter/hoss-client <https://github.com/WyssCenter/hoss-client>`_
 
 License
 -------
 
-The project is licensed under the `MIT license. <https://github.com/gigantum/hoss-client/blob/main/LICENSE>`_
+The project is licensed under the `MIT license. <https://github.com/WyssCenter/hoss-client/blob/main/LICENSE>`_
 
 .. toctree::
    :hidden:

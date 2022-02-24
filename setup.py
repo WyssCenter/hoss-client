@@ -49,7 +49,7 @@ setup(
     python_requires='>=3.6',
     include_package_data=True,
 
-    url='https://github.com/gigantum/hoss-client',
+    url='https://github.com/WyssCenter/hoss-client',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',

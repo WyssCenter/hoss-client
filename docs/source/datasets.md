@@ -146,7 +146,7 @@ By default, all write and delete operations will be synchronized. You can option
 which objects are synchronized. If omitted, the default empty policy is used that allows the default behavior. 
 
 The policy structure is fully documented in the 
-[sync policy spec](https://github.com/gigantum/hybrid-object-store/blob/main/resources/docs/server/sync_policy.md), 
+[sync policy spec](https://github.com/WyssCenter/hybrid-object-store/blob/main/resources/docs/server/sync_policy.md), 
 but is summarized below. You can manually enter policies in the UI, or provide them to the
 {py:class}`hoss.dataset.Dataset.enable_sync` method.
 
