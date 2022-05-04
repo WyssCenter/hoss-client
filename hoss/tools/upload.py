@@ -39,8 +39,8 @@ nest_asyncio.apply()
 
 
 def upload_directory(dataset_name: str, directory: str, namespace: str, endpoint: str,
-                     skip: str, num_processes: int = 1, max_concurrency: int = 10, multipart_threshold: int = 32,
-                     multipart_chunk_size: int = 32, metadata: Optional[Dict[str, str]] = None,
+                     skip: str, num_processes: int = 1, max_concurrency: int = 10, multipart_threshold: int = 5,
+                     multipart_chunk_size: int = 5, metadata: Optional[Dict[str, str]] = None,
                      prefix: Optional[str] = None) -> None:
     """Function to upload a directory with a CLI interface for status
 

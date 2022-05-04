@@ -5,7 +5,7 @@ from boto3.s3.transfer import MB
 from hoss.ref import DatasetRef
 
 
-def hash_file(path: str, chunk_size: int = 8 * MB, multipart_threshold: int = 8 * MB) -> str:
+def hash_file(path: str, chunk_size: int = 5 * MB, multipart_threshold: int = 5 * MB) -> str:
     """Utility to hash a file like how S3 etags are generated.
 
     If the file is smaller than or equal to the multipart upload chunk size, it is assumed a single
@@ -17,8 +17,8 @@ def hash_file(path: str, chunk_size: int = 8 * MB, multipart_threshold: int = 8 
 
     Args:
         path: path to the file to hash
-        chunk_size: size in bytes that would be used to chunk a file during a multipart upload (default is 8MB)
-        multipart_threshold: size in bytes that will trigger multipart uploads to be used (default is 8MB)
+        chunk_size: size in bytes that would be used to chunk a file during a multipart upload (default is 5MB)
+        multipart_threshold: size in bytes that will trigger multipart uploads to be used (default is 5MB)
 
     Returns:
         etag formatted hash
