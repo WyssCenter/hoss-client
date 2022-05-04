@@ -31,7 +31,10 @@ class ObjectStore(CoreAPI):
 
         # S3 client
         self._client = dict()
-        self._transfer_config = TransferConfig()
+        self._transfer_config = TransferConfig(
+            multipart_chunksize=5*MB,
+            multipart_threshold=5*MB
+        )
         self._sts_credential_expire = None
         self._sts_credential_expire_in_seconds = self.auth.jwt_exp_seconds / 2
 
