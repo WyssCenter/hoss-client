@@ -53,9 +53,9 @@ Options:
                                   operations.  [default: 10]
   --multipart_threshold INTEGER   Threshold in megabytes for which transfers
                                   will be split into multiple parts, defaults
-                                  to 32MB  [default: 32]
+                                  to 5MB  [default: 5]
   --multipart_chunk_size INTEGER  Size in megabytes for each multipart chunk,
-                                  if used. Defaults to 32MB  [default: 32]
+                                  if used. Defaults to 5MB  [default: 5]
   -m, --metadata TEXT             Object metadata key-value pair(s) applied to
                                   every object uploaded. You may specify
                                   multiple values by repeating the option

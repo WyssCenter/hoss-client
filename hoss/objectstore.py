@@ -31,7 +31,10 @@ class ObjectStore(CoreAPI):
 
         # S3 client
         self._client = dict()
-        self._transfer_config = TransferConfig()
+        self._transfer_config = TransferConfig(
+            multipart_chunksize=5*MB,
+            multipart_threshold=5*MB
+        )
         self._sts_credential_expire = None
         self._sts_credential_expire_in_seconds = self.auth.jwt_exp_seconds / 2
 
@@ -303,14 +306,14 @@ class ObjectStore(CoreAPI):
                                      ExtraArgs={"Metadata": metadata} if metadata is not None else None)
 
     def set_transfer_config(self, multipart_threshold: int, max_concurrency: int,
-                            multipart_chunksize: int = 8*MB) -> None:
+                            multipart_chunksize: int = 5*MB) -> None:
         """Function to set the transfer configuration used in managed transfers.
 
         Args:
             multipart_threshold: The transfer size threshold for which multipart uploads, downloads,
                                  and copies will automatically be triggered.
             max_concurrency: The maximum number of threads that will be making requests to perform a transfer.
-            multipart_chunksize: The partition size of each part for a multipart transfer. (default 8MB)
+            multipart_chunksize: The partition size of each part for a multipart transfer. (default 5MB)
 
         Returns:
 

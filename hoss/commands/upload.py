@@ -22,10 +22,10 @@ from hoss.tools.upload import upload_directory
                    "have large files, you likely don't need that many because boto will use concurrent uploads")
 @click.option('--max_concurrency', '-c', type=int, default=10, show_default=True,
               help="Maximum number of concurrent s3 API transfer operations.")
-@click.option('--multipart_threshold', type=int, default=32, show_default=True,
-              help="Threshold in megabytes for which transfers will be split into multiple parts, defaults to 32MB")
-@click.option('--multipart_chunk_size', type=int, default=32, show_default=True,
-              help="Size in megabytes for each multipart chunk, if used. Defaults to 32MB")
+@click.option('--multipart_threshold', type=int, default=5, show_default=True,
+              help="Threshold in megabytes for which transfers will be split into multiple parts, defaults to 5MB")
+@click.option('--multipart_chunk_size', type=int, default=5, show_default=True,
+              help="Size in megabytes for each multipart chunk, if used. Defaults to 5MB")
 @click.option('--metadata', '-m', type=str, multiple=True, default=list(),
               help="Object metadata key-value pair(s) applied to every object uploaded."
                    " You may specify multiple values by repeating the option (e.g. -m foo=bar -m fizz=buzz")
