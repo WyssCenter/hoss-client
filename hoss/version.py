@@ -4,7 +4,7 @@ import requests
 from hoss.error import ServerCheckError
 
 # Set the version of the library here
-__version__ = "0.7.5"
+__version__ = "0.7.6"
 
 
 def get_server_version(server_url: str) -> Tuple[str, str]:
